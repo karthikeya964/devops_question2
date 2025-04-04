@@ -17,3 +17,6 @@ spec:
           image: hruthingali/flask-app30
           ports:
             - containerPort: 5000
+          imagePullPolicy: Always
+      imagePullSecrets:
+        - name: regcred
