@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
-        DOCKER_IMAGE = 'hruthingali/flask-app30'
+        DOCKER_CREDENTIALS_ID = 'docke-hub-cred'
+        DOCKER_IMAGE = 'karthik449/devops_question2'
     }
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/hruthingali/devops_question2.git'
+                git branch: 'main', url: 'https://github.com/karthikeya964/devops_question2.git'
             }
         }
         stage('Build Docker Image') {
